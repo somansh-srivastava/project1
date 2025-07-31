@@ -2,60 +2,107 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hero Section Example</title>
+  <title>Biogen Insights</title>
   <style>
-    body, html {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
       font-family: Arial, sans-serif;
     }
 
     .hero {
-      background-image: url('hero]-background.jpg'); /* Replace with your image */
+      background-image: url('somansh.jpg'); /* Replace with your image */
       background-size: cover;
       background-position: center;
-      height: 100vh;
-      color: white;
+      height: 100vh; /* Full screen height */
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       text-align: center;
-      padding: 0 20px;
+      padding: 20px;
+      color: black;
     }
 
-    .hero h1 {
-      font-size: 3rem;
+    .header-box {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px 40px;
+      border-radius: 10px;
       margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border: 2px solid black; /* 👈 Black border added */
     }
 
-    .hero p {
+    .header-box h1 {
+      font-size: 3rem;
+    }
+
+    .hero img {
+      width: 700px; /* 👈 Increased image size */
+      height: auto;
+      margin: 20px 0;
+    }
+
+    .subheading {
       font-size: 1.2rem;
       margin-bottom: 30px;
+      max-width: 700px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px 20px;
+      border-radius: 8px;
     }
 
-    .hero a {
-      padding: 12px 24px;
-      background-color: #0077cc;
-      color: white;
-      text-decoration: none;
+    .nav-links {
+      display: flex;
+      gap: 10px;
+      font-size: 1rem;
       font-weight: bold;
-      border-radius: 6px;
-      transition: background-color 0.3s;
+      background-color: rgba(7, 186, 235, 0.971);
+      padding: 10px 20px;
+      border-radius: 8px;
     }
 
-    .hero a:hover {
-      background-color: #005fa3;
+    .nav-links a {
+      text-decoration: none;
+      color: #000000;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .nav-links span {
+      color: #555;
     }
   </style>
 </head>
-<body>
+<body>  
 
   <section class="hero">
-    <h1>Welcome to My Website</h1>
-    <p>Your one-stop solution for amazing web experiences.</p>
-    <a href="#about">Learn More</a>
+    <div class="header-box">
+      <h1>BioGen Insights</h1>
+    </div>
+
+    <!-- 🖼️ Paste your image below this line -->
+    <img src="DNA.jpg">
+    <!-- 🖼️ End of image section -->
+
+    <p class="subheading">Unlocking the Power of Genomic Data for Tomorrow's Discoveries</p>
+
+    <div class="nav-links">
+      <a href="#about">About</a><span>|</span>
+      <a href="#services">Services</a><span>|</span>
+      <a href="#portfolio">Portfolio</a><span>|</span>
+      <a href="#contact">Contact Us</a>
+    </div>
   </section>
 
 </body>
 </html>
+
+
